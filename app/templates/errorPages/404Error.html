@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mindly.ai</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/404ErrorStyle.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="center">
+        <div class="error">
+            <div class="number">4</div>
+            <div class="illustration">
+                <div class="circle"></div>
+                <div class="clip">
+                    <div class="paper">
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye eye-left"></div>
+                                <div class="eye eye-right"></div>
+                            </div>
+                            <div class="rosyCheeks rosyCheeks-left"></div>
+                            <div class="rosyCheeks rosyCheeks-right"></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if error_type == '404' %}
+            <div class="number">4</div>
+            {% elif error_type == '405' %}
+            <div class="number">5</div>
+            {%endif%}
+        </div>
+        <center>
+            <div class="text">
+                
+                <h2 class="H1-text">UH OH! You're lost.</h2>
+                
+                <p>{{ error_message }}</p>
+            </div>
+            <a href="/"> <button class="button">Home</button></a>
+        </center>
+    </div>
+
+    <!-- partial -->
+
+</body>
+
+</html>

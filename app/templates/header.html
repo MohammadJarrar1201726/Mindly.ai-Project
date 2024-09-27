@@ -1,0 +1,19 @@
+<div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a href="/" class="logo d-flex align-items-center">
+        <img src="static/img/logo.png" alt="#">
+        <h1 class="sitename">Mindly.ai</h1>
+    </a>
+    <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="/" class="active">Home</a></li>
+            {% if header=="Home" %}
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog-posts">Blog</a></li>
+            {% endif %}
+            <li><a href="mindMap">Generate</a></li>
+            <li><a href="signin">LogIn</a></li>
+        </ul>
+        <i i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+</div>

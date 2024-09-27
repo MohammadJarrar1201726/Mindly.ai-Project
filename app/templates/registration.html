@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/registration.css">
+    <link rel="stylesheet" href="../static/css/flash-message.css">
+    <script src="../static/js/auth.js"></script>
+    <script src="../static/js/flash-message.js"></script>
+    <title>Registration Page</title>
+    <script src="static/js/form-validation.js"></script>
+    <link rel="stylesheet" href="../static/css/flash-message.css">
+</head>
+<div>
+    <ul class="notifications" id="flash-messages-container"></ul>
+</div>
+<body id="body-registration">
+    <div class="container" id="main-container">
+        <div class="form-container" id="sign-up-container">
+            <form id="sign-up-form" action="/signup" method="post" onsubmit="return validateForm(event)">
+                <h1 class="registration" id="registration-title">Create Account</h1>
+                
+                <input type="text" name="name" class="registration" id="sign-up-name" placeholder="Full Name" autocomplete="name" required />
+                <span class="form-validation-error-message" id="name-error"></span>
+                
+                <input type="email" name="email" class="registration" id="sign-up-email" placeholder="Email" autocomplete="email" required/>
+                <span class="form-validation-error-message" id="email-error"></span>
+                
+                <input type="password" name="password" class="registration" id="sign-up-password" placeholder="Password" autocomplete="new-password" required/>
+                <span class="form-validation-error-message" id="password-error"></span>
+
+                <button class="registration" id="sign-up-btn">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container" id="sign-in-container">
+            <form id="sign-in-form" action="#">
+                <h1 class="registration" id="registration-title">Sign in</h1>
+                <input type="email" class="registration" id="sign-in-email" name="email" placeholder="Email" autocomplete="email" required />
+                <input type="password" class="registration" id="sign-in-password" name="password" placeholder="Password" autocomplete="current-password" required/>
+                <a href="#" class="registration" id="forgot-password">Forgot your password?</a>
+                <button class="registration" id="sign-in-btn">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container" id="overlay-container">
+            <div class="overlay" id="overlay">
+                <div class="overlay-panel overlay-left" id="overlay-left">
+                    <h1 class="registration" id="overlay-left-title">Welcome Back!</h1>
+                    <p class="registration" id="overlay-left-text">To keep connected with us please login with your
+                        personal info</p>
+                    <button class="registration cta" id="sign-in">Sign In</button>
+                    <button class="registration cta" id="home-sign-in">Back Home</button>
+
+                </div>
+                <div class="overlay-panel overlay-right" id="overlay-right">
+                    <h1 class="registration" id="overlay-right-title">Hello, Friend!</h1>
+                    <p class="registration" id="overlay-right-text">Enter your personal details and start journey with
+                        us</p>
+                    <button class="registration cta" id="sign-up">Sign Up</button>
+                    <button class="registration cta" id="home-sign-up">Back Home</button>
+
+
+                </div>
+            </div>
+        </div>
+        <ul class="notifications" id="flash-messages-container"></ul>
+    </div>
+    <script>
+        const signUpButton = document.getElementById('sign-up');
+        const signInButton = document.getElementById('sign-in');
+        const container = document.getElementById('main-container');
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+        document.getElementById('home-sign-in').addEventListener('click', function () {
+            window.location.href = '/';  
+        });
+
+        document.getElementById('home-sign-up').addEventListener('click', function () {
+            window.location.href = '/';  
+        });
+
+    </script>
+</body>
+
+
+</html>

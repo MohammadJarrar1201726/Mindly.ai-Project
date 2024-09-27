@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Mindly.ai</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="static/img/favicon.png" rel="icon">
+    <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="static/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+    <body class="index-page">
+        <header id="header" class="header d-flex align-items-center sticky-top">
+            {% include 'header.html' %}
+        </header>
+        <main class="main">
+            <!-- About Section -->
+            <section id="about" class="about section">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+                            <div class="swiper init-swiper">
+                                <script type="application/json" class="swiper-config">
+                                {
+                                    "loop": true,
+                                    "speed": 600,
+                                    "autoplay": {
+                                    "delay": 5000
+                                    },
+                                    "slidesPerView": "auto",
+                                    "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "type": "bullets",
+                                    "clickable": true
+                                    },
+                                    "breakpoints": {
+                                    "320": {
+                                    "slidesPerView": 1,
+                                    "spaceBetween": 40
+                                    },
+                                    "1200": {
+                                    "slidesPerView": 1,
+                                    "spaceBetween": 1
+                                    }
+                                    }
+                                }
+                            </script>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="static/img/img_h_6.jpg" alt="Image" class="img-fluid">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="static/img/img_h_7.jpg" alt="Image" class="img-fluid">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="static/img/img_h_8.jpg" alt="Image" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 order-lg-1">
+                            <h1 class="mb-4" data-aos="fade-up">
+                                Create Your Own Mind Map with Mindly.ai
+                            </h1>
+                            <p data-aos="fade-up">
+                                Welcome to <strong>Mindly.ai</strong>
+                                , the AI-powered tool that transforms the way you learn. With
+                                <strong>Mindly.ai</strong>, you can effortlessly create your own mind maps from your
+                                study materials.
+                                Whether it's lecture notes or textbooks Mindly.ai analyzes your documents to extract key
+                                concepts and visualize their connections.
+                            </p>
+                            <p class="mt-5" data-aos="fade-up">
+                                <a href="mindMap" class="btn btn-get-started">Get Started</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /About Section -->
+            <!-- About 2 Section -->
+            <section id="about-2" class="about-2 section light-background">
+                <div class="container">
+                    <div class="content">
+                        <div class="row justify-content-center" >
+                            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
+                                <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="img">
+                                        <img src="static/img/img_v_3.jpg" alt="circle image" class="img-fluid img-v-3"
+                                            style="margin-top: 35px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
+                                <div class="px-3">
+                                    <h2 class="content-title text-start">
+                                        Turn complex ideas into clear, structured mind maps, powered by Azure AI.
+                                    </h2>
+                                    <p class="lead">
+                                        Our intuitive platform makes it easy to organize your thoughts, understand
+                                        complex topics, and improve memory retention. Simply upload your documents, and
+                                        <strong>Mindly.ai</strong> will automatically generate a detailed mind map,
+                                        highlighting the relationships between different ideas. 
+                                        You can export your mind maps, making it
+                                        a valuable resource for study groups or personal reviews.
+                                    </p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /About 2 Section -->
+            <!-- Services Section -->
+            <section id="services" class="services section light-background">
+                <div class="container">
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="services-item" data-aos="fade-up">
+                                <div class="services-icon">
+                                    <i class="bi bi-pencil-square"></i>
+                                </div>
+                                <div>
+                                    <h3>Generate mind map</h3>
+                                    <p>Where ideas connect and grow at the edge of creativity</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="services-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="services-icon">
+                                    <i class="bi bi-file-earmark-arrow-down"></i>
+                                </div>
+                                <div>
+                                    <h3>Export</h3>
+                                    <p>Your ideas, neatly packaged and ready to share with the world</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="services-icon">
+                                    <i class="bi bi-book-half"></i>
+                                </div>
+                                <div>
+                                    <h3>Summarization</h3>
+                                    <p>Condensing complex information into clear, concise insights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Stats Section -->
+            <!-- Todo -->
+            <!-- Blog Posts Section -->
+            <section id="blog-posts" class="blog-posts section">
+                <!-- Section Title -->
+                <div class="container section-title" data-aos="fade-up">
+                    <!-- <p>Recent Posts</p>-->
+                    <h2>Examples</h2>
+                </div>
+                <!-- End Section Title -->
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                                <a href="#" class="thumb d-block"><img src="static/img/img_h_4.jpg" alt="Image"
+                                        class="img-fluid rounded fixed-size-img"></a>
+                                <div class="post-content">
+                                    <div class="meta">
+                                        <a href="#" class="cat">Development</a> •
+                                        <span class="date">SEP 1, 2024</span>
+                                    </div>
+                                    <h3><a href="#">Circular Node Layout: Focused and Organized Mind Mapping</a></h3>
+                                    <p>
+                                        This view presents the mind map using a circular node layout, 
+                                        combining a hierarchical tree structure with visually distinct, 
+                                        circular elements. The circular nodes draw attention to each topic individually, 
+                                        making it ideal for situations where you want to emphasize each point while maintaining a clear overall structure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="post-entry" data-aos="fade-up" data-aos-delay="200">
+                                <a href="#" class="thumb d-block"><img src="static/img/img_h_2.jpg" alt="Image"
+                                        class="img-fluid rounded fixed-size-img"></a>
+                                <div class="post-content">
+                                    <div class="meta">
+                                        <a href="#" class="cat">Development</a> •
+                                        <span class="date">SEP 1, 2024</span>
+                                    </div>
+                                    <h3><a href="#">Radial Layout View: Centralized Idea Exploration</a></h3>
+                                    <p>
+                                        The radial layout view displays the mind map with the main idea at the center, 
+                                        surrounded by branches of subtopics. This view is perfect for brainstorming sessions, 
+                                        where you can explore multiple related ideas radiating from a single central theme. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="post-entry" data-aos="fade-up" data-aos-delay="300">
+                                <a href="#" class="thumb d-block"><img src="static/img/img_h_3.jpg" alt="Image"
+                                        class="img-fluid rounded fixed-size-img"></a>
+                                <div class="post-content">
+                                    <div class="meta">
+                                        <a href="#" class="cat">Development</a> •
+                                        <span class="date">SEP 1, 2024</span>
+                                    </div>
+                                    <h3><a href="#">Horizontal Tree Layout: Streamlined Information Flow</a></h3>
+                                    <p>
+                                        This view arranges the mind map in a horizontal tree layout, 
+                                        providing a streamlined way to visualize hierarchical relationships with a clear, 
+                                        left-to-right flow. It's perfect for presenting processes, 
+                                        sequences, or organizational structures where understanding the order or level of each element is crucial.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Blog Posts Section -->
+        </main>
+        <footer id="footer" class="footer light-background">
+            {% include 'footer.html' %}
+        </footer>
+        <!-- Scroll Top -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+        <!-- Preloader -->
+        <div id="preloader"></div>
+        <!-- Vendor JS Files -->
+        <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="static/vendor/php-email-form/validate.js"></script>
+        <script src="static/vendor/aos/aos.js"></script>
+        <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <!-- Main JS File -->
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>
