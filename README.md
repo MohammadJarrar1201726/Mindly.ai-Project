@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed on your system:
 First, clone the project repository from GitHub:
 
 ```bash
-git clone https://MSPL-AI2024s@dev.azure.com/MSPL-AI2024s/Project%20D/_git/Project%20D
+git https://github.com/MohammadJarrar1201726/Mindly.ai-Project
 ```
 ### 2. Install Dependecies
 
